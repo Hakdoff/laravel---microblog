@@ -1,0 +1,46 @@
+.filter {
+    background-color: black;
+    position: absolute;
+    opacity: 0.2;
+    display: none;
+    inset: 0;
+    z-index: 0;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  .sidenav a {
+    padding: 2px;
+    color: rgb(248 250 252);
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover{
+    color: green;
+  }
+  .delete {
+    color: rgb(248 250 252);
+    display: block;
+    transition: 0.3s;
+  }
+
+  .delete:hover {
+    color: red;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    font-size: 22px;
+    margin-left: 1px;
+  }

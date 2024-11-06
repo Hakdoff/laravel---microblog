@@ -1,0 +1,55 @@
+.a-login {
+    @apply flex h-screen justify-center items-center bg-background;
+
+    &__card {
+        @apply flex flex-col h-auto size-auto w-auto rounded-lg overflow-hidden shadow-customshadow bg-whisperwhite justify-center items-center;
+    }
+
+    &__input {
+        @apply shadow w-64 border rounded-lg py-2 px-3 bg-whisperwhite shadow-lg;
+    }
+
+    &__h1 {
+        @apply text-center text-2xl font-bold;
+    }
+
+    &__label {
+        @apply py-1 text-base font-bold text-softblack;
+    }
+
+    &__button {
+        @apply bg-softblack font-medium text-warmbeige w-64 shadow px-4 py-2 rounded-full;
+
+        &:hover {
+            @apply bg-charcoalgray;
+        }
+    }
+
+    &__forgotpassword {
+        @apply py-2 text-xs underline font-normal text-dustyblue;
+    }
+
+    &__registered {
+        @apply text-center text-xs;
+    }
+
+    &__padding1 {
+        @apply py-1;
+    }
+
+    &__padding2 {
+        @apply py-2;
+    }
+
+    &__padding3 {
+        @apply py-3;
+    }
+
+    &__padding4 {
+        @apply py-4;
+    }
+
+    &__padding5 {
+        @apply py-5;
+    }
+}

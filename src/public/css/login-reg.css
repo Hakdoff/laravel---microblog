@@ -1,0 +1,132 @@
+.fade {
+    animation: fade 2s ease-in-out;
+}
+
+.swap-one {
+    animation: illusion1 2s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.swap-two {
+    animation: illusion2 2s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.to-left {
+    animation: to-left 2s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.to-right {
+    animation: to-right 2s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.move-up {
+    animation: move-up 2s ease-in-out;
+}
+
+.spin {
+    animation: spin 2s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.spin-back {
+    animation: spin-back 2s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes spin {
+    0% {
+        left: 5%;
+        transform: rotate(0deg);
+    }
+
+    100% {
+        left: 88%;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-back {
+    0% {
+        left: 88%;
+        transform: rotate(0deg);
+    }
+
+    100% {
+        left: 5%;
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes to-left {
+    from {
+        right: 0;
+    }
+
+    to {
+        right: calc(100% - 66.66%);
+    }
+}
+
+@keyframes to-right {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: calc(100% - 66.66%);
+    }
+}
+
+@keyframes illusion1 {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes illusion2 {
+    0% {
+        right: 0;
+    }
+
+    50% {
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+.left-88 {
+    left: 88%;
+}

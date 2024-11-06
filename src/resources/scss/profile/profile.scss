@@ -1,0 +1,81 @@
+.p-profile {
+    @apply pb-1 bg-background rounded-lg;
+
+    &__container {
+        @apply border-2 bg-whisperwhite rounded-lg;
+    }
+
+    &__cover {
+        @apply flex justify-between items-center px-3;
+    }
+
+    &__name {
+        @apply text-5xl font-bold;
+    }
+
+    &__sidename {
+        @apply col-span-2 text-xl font-bold;
+    }
+
+    &__name-container {
+        @apply grid grid-flow-col gap-1 py-3;
+    }
+
+    &__bio {
+        @apply text-lg py-3 italic;
+    }
+
+    &__aside {
+        @apply d-dashboard__sidebar sticky top-negative bg-whisperwhite;
+    }
+
+    &__edit-input {
+        @apply shadow w-64 border rounded-lg py-2 px-3 bg-gray-50 shadow-lg;
+    }
+
+    &__edit-input-full {
+        @apply shadow w-full border rounded-lg py-2 px-3 bg-gray-50 shadow-lg;
+    }
+
+    &__small {
+        @apply w-20 h-20 border-2 border-white rounded-full overflow-hidden relative;
+    }
+
+    &__icons {
+        @apply grid grid-flow-col gap-2;
+    }
+
+    &__logout {
+        @apply col-span-2 text-lg transition-transform hover:scale-110 hover:text-red-900;
+    }
+
+    &__button {
+        @apply flex justify-center items-center mt-4;
+    }
+
+    &__edit-container {
+        @apply flex flex-col gap-2 bg-gray-50 m-1 p-4 border-2 bg-whisperwhite rounded-lg;
+    }
+
+    &__list {
+        @apply px-4 py-4 w-full h-full flex justify-center focus:bg-mygray focus:text-white hover:bg-mygray hover:text-white cursor-pointer transition-colors duration-300;
+    }
+
+    .animate-spin {
+        animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    .top-negative {
+        top: -155px;
+    }
+}

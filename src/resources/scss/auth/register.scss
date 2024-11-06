@@ -1,0 +1,80 @@
+.register {
+    @apply min-h-screen py-20 bg-background;
+
+    &_mainbox {
+        @apply container shadow-customshadow mx-auto flex w-8/12 overflow-hidden rounded-xl;
+    }
+
+    /**
+ * Global Styles
+ */
+    &_justifyCenter {
+        @apply relative flex-1 flex justify-center items-center;
+    }
+
+    &_flexRow {
+        @apply flex flex-row space-x-4;
+    }
+
+    &_inputBox {
+        @apply w-full rounded-md border border-gray-300 px-3 py-2 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 bg-whisperwhite;
+    }
+
+    &_inputBoxLabel {
+        @apply mb-1 pt-3 inline-block text-sm font-medium text-softblack;
+    }
+
+    /**
+ * Left Box Styles
+ */
+    &_box1 {
+        @apply bg-softblack w-full px-12 py-16 lg:w-2/5 flex flex-col;
+    }
+
+    &_leftText1 {
+        @apply mt-2 text-center text-4xl text-whisperwhite flex justify-center items-center;
+    }
+
+    &_leftText2 {
+        @apply mt-2 text-center text-sm text-whisperwhite flex-1 flex justify-center items-center;
+    }
+
+    &_figureStyle {
+        @apply max-w-lg flex flex-col h-full mx-auto;
+    }
+
+    &_box2 {
+        @apply w-full px-12 py-16 lg:w-3/5 bg-whisperwhite;
+    }
+
+    &_roundedStyle {
+        @apply shadow rounded-full bg-whisperwhite w-60 h-60 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+    }
+
+    &_userIcon {
+        @apply h-auto max-w-48 rounded-lg z-10 relative;
+    }
+
+    /**
+ * Right Box Styles
+ */
+    &_datepicker1 {
+        @apply pointer-events-none absolute inset-y-14 start-0 flex items-center ps-3.5;
+    }
+
+    &_datepicker2 {
+        @apply w-4 h-4 text-softblack dark:text-gray-400;
+    }
+
+    &_datepicker3 {
+        @apply bg-background shadow border-none text-softblack text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+    }
+
+    &_cancelButton {
+        @apply w-full px-4 py-2 mr-4 text-sm font-medium text-warmbeige bg-softblack bg-opacity-80 rounded-full border border-gray-200 hover:bg-red-700 focus:outline-none focus:ring-4 focus:ring-red-300;
+    }
+
+    &_saveButton {
+        @apply w-full px-4 py-2 text-sm font-medium text-warmbeige bg-softblack rounded-full border border-transparent hover:bg-green-700 focus:outline-none focus:ring-4 focus:ring-green-300;
+    }
+}
